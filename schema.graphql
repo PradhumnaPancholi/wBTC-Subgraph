@@ -1,0 +1,15 @@
+type MintEvent @entity {
+  id: ID! 
+  from: String
+  value: BigInt
+  txHash: String
+  timestamp: BigInt
+}
+
+type BurnEvent @entity {
+  id: ID!
+  from: String
+  value: BigInt
+  txHash: String
+  timestamp: BigInt
+}
